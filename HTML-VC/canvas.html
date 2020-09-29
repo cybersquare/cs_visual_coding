@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cybersquare block coding</title>
+    <style>
+        canvas{
+            border: 1px solid black;
+            background-color: #009688; 
+        }
+    </style>
+</head>
+<body>
+<table width='100%' border='0'>
+    <!-- First row of the table contains logo and heading -->
+    <tr  bgcolor="#546e7a" height="70">
+        <td>
+            <img src='images/cs_logo.png' width='200' alt="">
+        </td>
+        <td align="center"><font face="arial" color="white">
+            <h1>Visual coding</h1></font>
+        </td>
+    </tr>
+    <tr>
+        <td width='300' valign="top">
+            <canvas></canvas>  <!--  canvas -->
+            <div> <input type="button" value="Run"></div> <!--  Run button -->
+        </td>
+        <td>
+            <table border="0" width="100%">
+                <tr>
+                    <!-- Instructions -->
+                    <td colspan="2" bgcolor="#9fa8da"  height="50"><h3>Instructions</h3></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><img src="images/cs_cat.png" width="50">
+                    <span>Visual programming language (VPL) is any programming language that lets users create programs by manipulating program elements graphically rather than by specifying them textually. A VPL allows programming with visual expressions, spatial arrangements of text and graphic symbols, used either as elements of syntax or secondary notation. For example, many VPLs (known as dataflow or diagrammatic programming) are based on the idea of "boxes and arrows", where boxes or other screen objects are treated as entities, connected by arrows, lines or arcs which represent relations.</span>
+                    </td>
+                </tr>
+                <tr bgcolor="#3f51b5" align="center" height="50">
+                    <td width="150"><font color="white"><b>Blocks</b></font></td>
+                    <td><font color="white"><b>Workspace</b></font></td>
+                </tr>
+                <tr align="center" height="500">
+                    <!-- Code blocks -->
+                    <td width="150" bgcolor="#c5cae9">
+                        <p><img src="images/up.png" width="100"></p>
+                        <p><img src="images/down.png" width="100"></p>
+                        <p><img src="images/left.png" width="100"></p>
+                        <p><img src="images/right.png" width="100"></p>
+                    </td>
+                    <!-- Workspace -->
+                    <td><font color="white"><b>Workspace</b></font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+    <script type="text/javascript" src="canvas.js"></script>
+</body>
+</html>

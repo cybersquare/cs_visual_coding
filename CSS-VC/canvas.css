@@ -1,0 +1,113 @@
+/* Element selector */
+canvas{
+    border: 1px solid black;
+    background-color: #009688;
+    margin: 10px;
+}
+
+/* Class selector */
+.head{
+    background-color: #546e7a;
+    padding: 20px;
+}
+
+h1{
+    width: 900px;
+    text-align: center;
+    color: white;
+    float: right;
+    margin:0px;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left_box{
+    width: 350px;
+    float: left;
+    background-color: white;
+}
+
+.right_box{
+    padding-top: 10px;
+    padding-left: 350px;
+    width: auto;
+}
+
+button{
+    color:white;
+    background-color: #f57c00;
+    width: 125px;
+    font-size: 25px;
+    border: 0px;
+    margin: 10px;
+    border-radius: 10px;;
+}
+
+button img{
+    padding: 5px;
+    margin:0px;
+    float: left;
+}
+
+button div{
+    float:left;
+    padding-top: 10px;
+}
+
+button:hover{
+    box-shadow: 2px 2px rgb(209, 209, 209);
+}
+
+#p_inst1{
+    background-color: #9fa8da;
+    padding:5px;
+}
+
+/* ID Selector */
+#p_inst2{
+    background-color: #e0e0e0; 
+    margin: 0px; 
+    padding:10px
+}
+
+.prog_head{
+    background-color:#303f9f ; 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+}
+
+.workspace{
+    width: auto; 
+    height: 500px;  
+    padding: 20px; 
+    margin-left:170px ;
+    background-color:#f0f4c3;
+}
+
+.prog_blocks{
+    width: 150px; 
+    float: left; 
+    border-right: 1px solid grey; 
+    text-align: center; 
+    padding: 10px; 
+    background-color: #c5cae9;
+    height: 520px;
+}
+
+.prog_head_blocks{
+    width: 150px; 
+    float: left;  
+    border-right: 1px solid white; 
+}
+
+.inst_desc{
+    margin-left:80px; 
+    padding:5px; 
+    background-color: white; 
+    border-radius: 10px;
+}

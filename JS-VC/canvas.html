@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cybersquare block coding</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+<!-- Header div with logo and heading -->
+<div class="head">
+    <img src='images/cs_logo.png' width='200' alt="">
+    <h1>Visual coding</h1>
+</div>
+
+<div class="left_box">
+    <!-- Two canvases form two layers. One is background layer 
+        and other one for drawing cat. If you use single layer background 
+        will be erased while re-drawing cat for animation.  -->
+    <div style="position: relative;">
+        <canvas id="canvas_back" width="300" height="300" 
+          style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+        <canvas id="canvas_cat" width="300" height="300" 
+          style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+    </div>
+    <!-- Run button -->
+    <button onclick ="return run_program()" id="run_button">  
+        <img src="images/play.png" width="40" alt=""> 
+        <div>Run</div>  
+    </button>
+</div> <!-- End left box -->
+
+<div class="right_box">
+    <div id="p_inst1" style="padding-left: 20px;">
+        Instructions
+    </div>
+    <div id="p_inst2" > <!-- Description about visual coding -->
+       <div style="width: 80px; float: left; margin-top: 10px;"> 
+        <img src="images/cs_cat.png" width="50" alt=""></div>
+       <div class="inst_desc"><p>Visual programming language (VPL) is any programming 
+        language that lets users create programs by manipulating program elements 
+        graphically rather than by specifying them textually. A VPL allows programming 
+        with visual expressions, spatial arrangements of text and graphic symbols, used 
+        either as elements of syntax or secondary notation.</p></div>
+    </div>
+    <div  style=" margin-top: 10px; "> <!-- Progamming area header -->
+        <div  class="prog_head prog_head_blocks" > Blocks</div>
+        <div  class="prog_head" style="width: auto;  ">Workspace</div>
+     </div>
+     <div >
+        <div class="prog_blocks"> <!-- Programming blocks-->
+            <p><img class="up" id="up_arrow" src="images/up.png" width="100" draggable="true" ondragstart="drag(event)"></p>
+            <p><img class="down" id="down_arrow" src="images/down.png" width="100" draggable="true" ondragstart="drag(event)"></p>
+            <p><img class="left" id="left_arrow" src="images/left.png" width="100" draggable="true" ondragstart="drag(event)"></p>
+            <p><img class="right" id="right_arrow" src="images/right.png" width="100" draggable="true" ondragstart="drag(event)"></p>
+          </div>
+        <div class="workspace" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+     </div>
+</div><!-- End right box -->
+    <script type="text/javascript" src="canvas.js"></script>
+</body>
+</html>
