@@ -91,7 +91,7 @@ function run_program(){
     setTimeout(function(){
         run_button.disabled = false;
         run_button.style.backgroundColor="#f57c00";
-        code = []
+       // code = []
     }, 1000 * (code.length + 1));
     
 }
